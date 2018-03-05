@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="20dp">
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="20dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+    <TextView
+        android:id="@+id/table_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="@dimen/content_text_size"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/black"
+        android:text="點檢表名: typeName"/>
+
+    <TextView
+        android:id="@+id/equ_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="@dimen/content_text_size"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/table_name"
+        android:text="设备名称: equName"/>
+    <TextView
+        android:id="@+id/equ_name_2_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="@dimen/content_text_size"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/equ_name_text"
+        android:text="现场名称: equName2"/>
+    <TextView
+        android:id="@+id/record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/equ_name_2_text"
+        android:padding="5dp"
+        android:textSize="@dimen/content_text_size"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="5dp"
+        android:text="记录时间: 2017/02/22 10:15 ~ 10: 30"/>
+
+</RelativeLayout>

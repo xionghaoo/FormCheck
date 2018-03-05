@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zdtco.formui.TemplateFourFormFragment">
+
+    <com.zdtco.formui.FormView
+        android:id="@+id/form1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.zdtco.formui.FormView>
+
+    <Button
+        android:id="@+id/start_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="开始点检"/>
+
+    <com.zdtco.formui.FormView
+        android:id="@+id/form2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.zdtco.formui.FormView>
+
+    <com.zdtco.widgets.FormOperationView
+        android:id="@+id/template_four_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.zdtco.widgets.FormOperationView>
+
+</LinearLayout>

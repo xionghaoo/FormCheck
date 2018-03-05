@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zdtco.formui.CJFormFragment">
+
+    <LinearLayout
+        android:id="@+id/front_form_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.zdtco.formui.FormView
+            android:id="@+id/front_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.zdtco.formui.FormView>
+
+        <Button
+            android:id="@+id/next_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下一步"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/behind_form_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.zdtco.widgets.WrapGridView
+            android:id="@+id/check_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchMode="columnWidth">
+        </com.zdtco.widgets.WrapGridView>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+        
+        <com.zdtco.formui.FormView
+            android:id="@+id/behind_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.zdtco.formui.FormView>
+        <com.zdtco.widgets.FormOperationView
+            android:id="@+id/operation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.zdtco.widgets.FormOperationView>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

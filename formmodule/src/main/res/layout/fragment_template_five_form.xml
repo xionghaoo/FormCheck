@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zdtco.formui.TemplateFourFormFragment">
+
+    <com.zdtco.formui.FormView
+        android:id="@+id/form1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.zdtco.formui.FormView>
+
+    <Button
+        android:id="@+id/start_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="开始点检"/>
+
+    <com.zdtco.formui.FormView
+        android:id="@+id/form2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.zdtco.formui.FormView>
+
+    <RelativeLayout
+        android:id="@+id/record_operation_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btn_current_record"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="50dp"
+            android:gravity="center"
+            android:background="@drawable/btn_submit_shape"
+            android:textColor="@color/white"
+            android:text="当前记录数量"/>
+        <TextView
+            android:id="@+id/record_count_txt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/circle_record"
+            android:layout_alignEnd="@id/btn_current_record"
+            android:textSize="16sp"
+            android:text="0"/>
+        <Button
+            android:id="@+id/btn_add_record"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/btn_submit_shape"
+            android:layout_toEndOf="@id/btn_current_record"
+            android:textColor="@color/white"
+            android:text="添加记录"/>
+    </RelativeLayout>
+
+    <com.zdtco.widgets.FormOperationView
+        android:id="@+id/template_five_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.zdtco.widgets.FormOperationView>
+
+</LinearLayout>

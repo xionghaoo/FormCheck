@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFA500</color>
+    <color name="colorPrimaryDark">#FF8C00</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color><!--白色 -->
+    <color name="orange">#FFA500</color><!--橙色 -->
+    <color name="item_device_list_title">#f44336</color>
+    <color name="item_device_list_item_background">#82b1ff</color>
+    <color name="item_device_list_text">#000000</color>
+    <color name="aliceblue">#F0F8FF</color><!--艾利斯兰 -->
+    <color name="bt_search_btn_pressed">#cf73d6</color>
+    <color name="lightsalmon">#FFA07A</color><!--亮肉色 -->
+    <color name="red">#FF0000</color><!--红色 -->
+
+</resources>

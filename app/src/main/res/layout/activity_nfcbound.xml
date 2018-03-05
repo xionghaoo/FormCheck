@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xh.formmodules.nfcbound.NFCBoundActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/nfc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="60dp"
+            android:text="NFC标签"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nfc_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="请扫描NFC标签"
+            app:layout_constraintBottom_toBottomOf="@+id/nfc_title"
+            app:layout_constraintStart_toEndOf="@+id/nfc_title"
+            app:layout_constraintTop_toTopOf="@+id/nfc_title" />
+
+        <TextView
+            android:id="@+id/machine_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="设备编号"
+            app:layout_constraintEnd_toEndOf="@+id/nfc_title"
+            app:layout_constraintStart_toStartOf="@+id/nfc_title"
+            app:layout_constraintTop_toBottomOf="@+id/nfc_title" />
+
+        <TextView
+            android:id="@+id/machine_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择设备"
+            app:layout_constraintBottom_toBottomOf="@+id/machine_title"
+            app:layout_constraintStart_toStartOf="@+id/nfc_code"
+            app:layout_constraintTop_toTopOf="@+id/machine_title" />
+
+        <Button
+            android:id="@+id/btn_select_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="选择设备"
+            android:onClick="onClick"
+            app:layout_constraintBottom_toBottomOf="@+id/machine_id"
+            app:layout_constraintStart_toEndOf="@+id/machine_id"
+            app:layout_constraintTop_toTopOf="@+id/machine_id" />
+
+        <Button
+            android:id="@+id/btn_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:onClick="onClick"
+            android:text="绑定"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/machine_id" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

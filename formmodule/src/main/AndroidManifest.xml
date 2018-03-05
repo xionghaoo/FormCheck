@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xh.formlib">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc" />
+
+    <application>
+        <activity android:name="com.zdtco.formui.FormActivity" />
+        <activity android:name="com.zdtco.home.UnboundMachineActivity" />
+        <activity android:name="com.zdtco.home.PostFormListActivity" />
+        <activity android:name="com.zdtco.home.FormStubListActivity" />
+        <activity android:name="com.zdtco.settings.FormSettingsActivity" />
+        <activity android:name="com.zdtco.settings.FormTimeLimitSettingsActivity" />
+        <activity android:name="com.zdtco.audit.AuditActivity" />
+        <activity android:name="com.zdtco.settings.StayTimeSettingsActivity" />
+        <activity android:name="com.zdtco.audit.AuditFormListActivity"/>
+    </application>
+
+</manifest>

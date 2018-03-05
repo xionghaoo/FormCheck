@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/machine_item_view"
+    style="@style/RippleStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/bg_machine_list_item" />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/bg_machine_center_surround" />
+
+    <ImageView
+        android:id="@+id/center_circle"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_login_center_circle" />
+
+    <TextView
+        android:id="@+id/line_id"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/center_circle"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="设备ID: \n 34325"
+        android:textColor="@color/item_device_list_text"
+        android:textSize="@dimen/content_text_size" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="160dp"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:id="@+id/line_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="設備名稱: 34325"
+            android:textColor="@color/item_device_list_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/clsr_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="設備名稱: 34325"
+            android:textColor="@color/item_device_list_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/time_limit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="設備名稱: 34325"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/time_limit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="20dp"-->
+        <!--android:text="10分鐘"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_centerVertical="true" />-->
+
+</RelativeLayout>

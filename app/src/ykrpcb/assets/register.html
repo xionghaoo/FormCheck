@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register User Info</title>
+        <meta charset="GBK" lang="cn">
+        <style>
+            .centerOut {
+                margin: auto;
+                width: 50%;
+                color: black;
+            }
+            .centerIn {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                width: 100%;
+                font-size: 25px;
+                color: forestgreen;
+            }
+            .centerForm {
+                margin-top: 25%;
+                margin-bottom: 25%;
+                height: 50%;
+            }
+            .r {
+                margin-left: 25%;
+                margin-right: 25%;
+                width: 50%;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="centerForm" name="userRegister">
+            <p class="centerOut">用户名:<br>
+                <input class="centerIn" type="text" name="username">
+            </p>
+            <p class="centerOut">工号:<br>
+                <input class="centerIn" type="text" name="workno">
+            </p>
+            <P class="centerOut">工卡NFC编号: <br>
+                <input class="centerIn" type="text" name="nfcCode" value="请刷工卡" readonly>
+            </P>
+            <p  class="centerOut"><input class="r" type="submit" name="btn" value="注册" onclick="checkUserInfo(event)"></p>
+        </form>
+        <script>
+            function checkUserInfo(event) {
+                var username = document.forms["userRegister"].elements["username"].value;
+                var workNo = document.forms["userRegister"].elements["workno"].value;
+                var nfcCode = document.forms["userRegister"].elements["nfcCode"].value;
+                if (username == "") {
+                    showMsg("用户名为空");
+                    event.preventDefault();
+                    return false
+                }
+                if (workNo == "") {
+                    showMsg("工号为空");
+                    event.preventDefault();
+                    return false
+                }
+                if (nfcCode == "请刷工卡") {
+                    showMsg("未刷工卡");
+                    event.preventDefault();
+                    return false
+                }
+                return true
+            }
+
+            function showMsg(msg) {
+                Android.showToast(msg);
+            }
+
+            function setNFCCode(code) {
+                var nfcCode = document.forms["userRegister"].elements["nfcCode"];
+                nfcCode.value = code;
+            }
+        </script>
+    </body>
+</html>

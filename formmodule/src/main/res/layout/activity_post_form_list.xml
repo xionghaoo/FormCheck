@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_field_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zdtco.home.PostFormListActivity">
+
+    <RelativeLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/split_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:id="@+id/select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/split_line"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/btn_select_shape"
+            android:textSize="16sp"
+            android:text="选择所有" />
+
+        <Button
+            android:id="@+id/release_all"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/split_line"
+            android:layout_toEndOf="@id/select_all"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="@drawable/btn_select_shape"
+            android:textSize="16sp"
+            android:text="取消全选" />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/split_line"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/btn_delete_shape"
+            android:textSize="16sp"
+            android:text="删除选定项"/>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@id/delete_button"
+            android:layout_below="@id/split_line"
+            android:background="@drawable/btn_submit_shape"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="提交选定项"/>
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/form_list"
+        android:layout_above="@id/button_container"
+        android:groupIndicator="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ExpandableListView>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_unbound_machine_query"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="未绑定设备查询" />
+        <item
+            android:id="@+id/form_stub_list"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="表单暂存记录" />
+        <item
+            android:id="@+id/un_post_list"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="未上传列表" />
+        <item
+            android:id="@+id/posted_list"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="已上传列表" />
+        <item
+            android:id="@+id/audit_list"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="待审核表单列表" />
+        <item
+            android:id="@+id/nav_nfc_binding"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="NFC标签绑定" />
+    </group>
+
+    <item android:title="设定">
+        <menu>
+            <item
+                android:id="@+id/form_settings"
+                android:icon="@drawable/ic_menu_share"
+                android:title="表单设定" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="登出" />
+        </menu>
+    </item>
+
+</menu>

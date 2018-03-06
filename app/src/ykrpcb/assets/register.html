@@ -30,7 +30,7 @@
         </style>
     </head>
     <body>
-        <form class="centerForm" name="userRegister">
+        <form class="centerForm" name="userRegister" action="http://10.182.34.124:8999/MachinePaperLess/GetAllPadUserAuthList.aspx">
             <p class="centerOut">用户名:<br>
                 <input class="centerIn" type="text" name="username">
             </p>
@@ -38,15 +38,16 @@
                 <input class="centerIn" type="text" name="workno">
             </p>
             <P class="centerOut">工卡NFC编号: <br>
-                <input class="centerIn" type="text" name="nfcCode" value="请刷工卡" readonly>
+                <input class="centerIn" type="text" name="softno" value="请刷工卡" readonly>
             </P>
             <p  class="centerOut"><input class="r" type="submit" name="btn" value="注册" onclick="checkUserInfo(event)"></p>
         </form>
+        <button onclick="submit()">提交表单</button>
         <script>
             function checkUserInfo(event) {
                 var username = document.forms["userRegister"].elements["username"].value;
                 var workNo = document.forms["userRegister"].elements["workno"].value;
-                var nfcCode = document.forms["userRegister"].elements["nfcCode"].value;
+                var nfcCode = document.forms["userRegister"].elements["softno"].value;
                 if (username == "") {
                     showMsg("用户名为空");
                     event.preventDefault();
@@ -70,8 +71,15 @@
             }
 
             function setNFCCode(code) {
-                var nfcCode = document.forms["userRegister"].elements["nfcCode"];
+                var nfcCode = document.forms["userRegister"].elements["softno"];
                 nfcCode.value = code;
+            }
+            
+            function submit() {
+                var form = document.forms["userRegister"].elements["username"].value;
+                var map = new Map();
+                map.set("a", form);
+                Android.submit(map);
             }
         </script>
     </body>

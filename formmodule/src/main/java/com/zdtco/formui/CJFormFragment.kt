@@ -209,6 +209,13 @@ class CJFormFragment : Fragment() {
         }
     }
 
+    fun showFormDescriptionView(formID: String?, desc: String?) {
+        if (formID == null || desc == null) {
+            return
+        }
+        operation.showFormDescription(formID, desc)
+    }
+
     override fun onAttach(context: Context) {
         super.onAttach(context)
         if (context is OnFragmentInteractionListener) {

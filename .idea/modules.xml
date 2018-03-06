@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DC.iml" filepath="$PROJECT_DIR$/DC.iml" />
-      <module fileurl="file://D:\Svnprojects\DeviceCheck\DC.iml" filepath="D:\Svnprojects\DeviceCheck\DC.iml" />
-      <module fileurl="file://D:\SVNRepo\DC\DeviceCheck.iml" filepath="D:\SVNRepo\DC\DeviceCheck.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/appupdate/appupdate.iml" filepath="$PROJECT_DIR$/appupdate/appupdate.iml" />
       <module fileurl="file://$PROJECT_DIR$/formmodule/formmodule.iml" filepath="$PROJECT_DIR$/formmodule/formmodule.iml" />
